@@ -27,6 +27,16 @@
         bottom: -23%;
     }
 
+    .cartao .estrela{
+        width: 20px;
+        height: 76.7px;
+     
+        background-size: contain;
+        background-repeat: no-repeat;
+        display: inline-block;
+    }
+    
+
     #btn-avancar {
         right: 20%;
     }
@@ -43,7 +53,7 @@
         gap: 10px;
     }
 
-    .cabecalho {
-        font-size: 12px;
+
     }
-}
+
+
