@@ -1,21 +1,29 @@
-@media(max-width: 768px) {
+@media (max-width: 768px) {
     body {
         background-position: center;
         padding: 0 15px;
     }
 
     .slider {
-        gap: 10px;
+        flex-direction: column;
+        gap: 10px; /* Consolidado para evitar redundância */
+    }
+
+    .cartao {
+        max-width: 320px; /* Limita a largura máxima das cartas */
+        margin: 0 auto; /* Centraliza as cartas */
+    }
+
+    .cartao .imagem-carta {
+        width: 100%; /* Mantém a imagem responsiva */
+        max-width: 300px; /* Limita o tamanho máximo */
+        height: auto; /* Mantém a proporção */
     }
 }
 
-@media(max-width: 496px) {
+@media (max-width: 496px) {
     .lista-personagens {
         width: 250px;
-    }
-
-    .imagem-carta {
-        width: 100%;
     }
 
     .slider {
@@ -27,15 +35,13 @@
         bottom: -23%;
     }
 
-    .cartao .estrela{
+    .cartao .estrela3{
         width: 20px;
-        height: 76.7px;
-     
+        height: 82px;
         background-size: contain;
         background-repeat: no-repeat;
         display: inline-block;
     }
-    
 
     #btn-avancar {
         right: 20%;
@@ -44,16 +50,26 @@
     #btn-voltar {
         left: 20%;
     }
+
+    .cartao {
+        max-width: 280px; /* Ajusta para telas menores */
+    }
+
+    .cartao .imagem-carta {
+        max-width: 250px;
+    }
 }
 
-@media(max-width: 375px) {
+@media (max-width: 375px) {
     body {
         justify-content: start;
         padding-top: 10px;
         gap: 10px;
     }
+}
 
-
+@media (max-width: 480px) {
+    .cartao .nome {
+        font-size: 14px;
     }
-
-
+}
